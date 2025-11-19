@@ -3,11 +3,11 @@
 }
 
 .logo-image {
-  height: 50px;
+  height: 42px;
   width: auto;
   object-fit: contain;
   display: block;
-  max-width: 200px;
+  max-width: 170px;
 }
 
 .logo-text {

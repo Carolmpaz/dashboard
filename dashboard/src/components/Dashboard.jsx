@@ -182,7 +182,7 @@ function Dashboard({ onLogout }) {
                 <span className="info-badge">Setpoint: {setpoint}°C</span>
               </div>
             </div>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer width="100%" height={350}>
               <AreaChart data={historyData}>
                 <defs>
                   <linearGradient id="colorTempIda" x1="0" y1="0" x2="0" y2="1">
@@ -242,7 +242,7 @@ function Dashboard({ onLogout }) {
             <div className="chart-header">
               <h3>Vazão de Água</h3>
             </div>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer width="100%" height={350}>
               <LineChart data={historyData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
                 <XAxis 
@@ -283,7 +283,7 @@ function Dashboard({ onLogout }) {
             <div className="chart-header">
               <h3>Potência e Energia</h3>
             </div>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer width="100%" height={350}>
               <AreaChart data={historyData}>
                 <defs>
                   <linearGradient id="colorPotencia" x1="0" y1="0" x2="0" y2="1">
@@ -354,7 +354,7 @@ function Dashboard({ onLogout }) {
             <div className="chart-header">
               <h3>Consumo de Gás Natural</h3>
             </div>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer width="100%" height={350}>
               <BarChart data={historyData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
                 <XAxis 
@@ -392,7 +392,7 @@ function Dashboard({ onLogout }) {
             <div className="chart-header">
               <h3>Diferença de Temperatura (ΔT)</h3>
             </div>
-            <ResponsiveContainer width="100%" height={400}>
+            <ResponsiveContainer width="100%" height={350}>
               <LineChart data={historyData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
                 <XAxis 
