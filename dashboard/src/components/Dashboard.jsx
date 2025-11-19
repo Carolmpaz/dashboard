@@ -116,7 +116,7 @@ function Dashboard({ onLogout }) {
         <div className="header-left">
           <Logo />
           <div className="header-title-section">
-            <h1>Dashboard Caldeira</h1>
+            <h1>Dashboard Comgas</h1>
             <div className="connection-status">
               <span className={`status-indicator ${isConnected ? 'connected' : 'disconnected'}`}></span>
               <span>{isConnected ? 'Conectado' : 'Desconectado'}</span>

@@ -29,7 +29,7 @@ function Login({ onLogin }) {
           <Logo />
         </div>
         <div className="login-header">
-          <h1>Dashboard Caldeira</h1>
+          <h1>Dashboard Comgas</h1>
           <p>Distribuidora de Gás</p>
         </div>
         
