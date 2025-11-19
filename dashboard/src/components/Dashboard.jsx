@@ -21,7 +21,12 @@ function Dashboard({ onLogout }) {
   const maxHistoryPoints = 50 // Máximo de pontos no histórico
 
   useEffect(() => {
-    const client = mqtt.connect('ws://broker.hivemq.com:8000/mqtt', {
+    // Detecta se a página está sendo servida via HTTPS e usa o protocolo apropriado
+    const protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://'
+    const port = window.location.protocol === 'https:' ? '8884' : '8000'
+    const brokerUrl = `${protocol}broker.hivemq.com:${port}/mqtt`
+    
+    const client = mqtt.connect(brokerUrl, {
       clientId: 'dashboard_' + Math.random().toString(16).substr(2, 8),
       reconnectPeriod: 5000,
       connectTimeout: 10000
